@@ -34,7 +34,7 @@ class cleanco(object):
 
 	def __init__(self, business_name):
 		# always do non-visible cleanup, but store the original just in case
-		self.business_name = ' '.join(business_name.split())
+		self.business_name = ' '.join(str(business_name).split())
 		self._original = business_name
 
 	def string_stripper(self, business_name):
